@@ -4,40 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <title> To-Do-List</title>
-    <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatibile" content="ie=edge">
+    <link href="styles\style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Open+Sans:400,700" rel="stylesheet">
+
 </head>
 
 <body>
     <main class="app-container">
-
-        <h3>
+        <h2>
             To Do List
-        </h3>
+        </h2>
+
         <section class="new_task_container">
             <form>
                 <div class="input-group">
                     <input type="text" class="form-control" placeholder="Task name">
                     <span class="input-group-btn">
+                        <textarea placeholder="Descrtipion"></textarea>
+                        <input type="text" placeholder="Due Date (dd/mm/yyyy)" />
                         <button class="btn btn-primary" type="submit">Add a task</button>
+                        <input type="button" class="btn btn-primary" value="Clear Data" />
+
                     </span>
                 </div>
             </form>
         </section>
-        <section class="tasks-cointainer">
-            <ul>
-                <li>
-                    <div class="input-group">
-                        <span class="input-group-btn">
-                            <button class="btn btn-primary" >Add a task</button>
-                        </span>
-                        <input type="text" class="form-control" placeholder="task">
-                        <span class="input-group-btn">
-                            <button class="btn btn-primary" >sddssd</button>
-                        </span>
-                    </div>
-                </li>
-            </ul>
+        <section class="tasks-cointainers">
+            <div class="task-list" id="pending">
+                <h3>Pending</h3>
+                <div class="todo-task">
+                    <div class="task-header">Sample Header</div>
+                    <div class="task-date">31/07/1993</div>
+                    <div class="task-description">Lorem Ipsum Dolor Sit Amet</div>
+                </div>
+            </div>
+
+            <div class="task-list" id="inProgress">
+                <h3>In Progress</h3>
+            </div>
+
+            <div class="task-list" id="completed">
+                <h3>Completed</h3>
+            </div>
+            <div id="delete-div"></div>
+
         </section>
     </main>
     <script src=" js/scripts.js "></script>
