@@ -22,9 +22,10 @@
                     <input type="text" class="form-control" placeholder="Task name">
                     <span class="input-group-btn">
                         <textarea placeholder="Descrtipion"></textarea>
-                        <input type="text" placeholder="Due Date (dd/mm/yyyy)" />
+                        <input type="text" id="datepicker" placeholder="Due Date (dd/mm/yyyy)" />
                         <button class="btn btn-primary" type="submit">Add a task</button>
                         <input type="button" class="btn btn-primary" value="Clear Data" />
+                        <div style="clear:both;"></div>
 
                     </span>
                 </div>
@@ -51,7 +52,14 @@
 
         </section>
     </main>
-    <script src=" js/scripts.js "></script>
+    <script src=" js/scripts.js ">
+        $("#datepicker").datepicker();
+        $("#datepicker").datepicker("option", "dateFormat", "dd/mm/yy");
+
+        $(".task-container").droppable();
+        $(".todo-task").draggable({ revert: "valid", revertDuration: 200 });
+        todo.init(); 
+    </script>
 </body>
 
 </html>
