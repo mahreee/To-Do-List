@@ -11,55 +11,47 @@
 </head>
 
 <body>
-    <main class="app-container">
-        <h2>
-            To Do List
-        </h2>
+    <div id="all">
+        <main class="app-container">
+            <h2>
+                To Do List
+            </h2>
 
-        <section class="new_task_container">
-            <form>
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Task name">
-                    <span class="input-group-btn">
-                        <textarea placeholder="Descrtipion"></textarea>
-                        <input type="text" id="datepicker" placeholder="Due Date (dd/mm/yyyy)" />
-                        <button class="btn btn-primary" type="submit">Add a task</button>
-                        <input type="button" class="btn btn-primary" value="Clear Data" />
-                        <div style="clear:both;"></div>
+            <section class="new_task_container">
+                <form>
+                    <div class="input-group">
+                        <input type="text" id="myInput" placeholder="Task name">
+                        <span onclick="newElement()" class="addBtn">Add</span>
+                    </div>
+                </form>
+            </section>
 
-                    </span>
+            <section class="tasks-cointainers">
+
+                <div class="task-list" id="pending">
+                    <h3>Pending</h3>
+                    <ul id="myUL">
+                        <li>
+                            New task
+                        </li>
+                    </ul>
                 </div>
-            </form>
-        </section>
-        <section class="tasks-cointainers">
-            <div class="task-list" id="pending">
-                <h3>Pending</h3>
-                <div class="todo-task">
-                    <div class="task-header">Sample Header</div>
-                    <div class="task-date">31/07/1993</div>
-                    <div class="task-description">Lorem Ipsum Dolor Sit Amet</div>
+
+                <div class="task-list" id="inProgress">
+                    <h3>In Progress</h3>
                 </div>
-            </div>
 
-            <div class="task-list" id="inProgress">
-                <h3>In Progress</h3>
-            </div>
+                <div class="task-list" id="completed">
+                    <h3>Completed</h3>
+                </div>
 
-            <div class="task-list" id="completed">
-                <h3>Completed</h3>
-            </div>
-            <div id="delete-div"></div>
+            </section>
+        </main>
+    </div>
 
-        </section>
-    </main>
     <script src=" js/scripts.js ">
-        $("#datepicker").datepicker();
-        $("#datepicker").datepicker("option", "dateFormat", "dd/mm/yy");
-
-        $(".task-container").droppable();
-        $(".todo-task").draggable({ revert: "valid", revertDuration: 200 });
-        todo.init(); 
     </script>
+
 </body>
 
 </html>

@@ -1,73 +1,92 @@
 .task-list {
   width: 250px;
   float: left;
-  margin: 0 5px;
+  margin: 20px 20px;
   background-color: #e3e3e3;
   min-height: 240px;
   border-radius: 10px;
   padding-bottom: 15px;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.task-list input, .task-list textarea {
-  width: 240px;
-  margin: 1px 5px;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.task-list input {
-  height: 30px;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.todo-task {
-  border-radius: 5px;
-  background-color: #fff;
-  width: 230px;
-  margin: 5px;
-  padding: 5px;
-  font-family: 'Open Sans', sans-serif;
-  text-align: center;
-}
-
-.task-list input[type="button"] {
-  width: 100px;
-  margin: 5px;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.todo-task > .task-header {
-  font-weight: bold;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.todo-task > .task-date {
-  font-size: small;
-  font-style: italic;
-   font-family: 'Open Sans', sans-serif; 
-}
-
-.todo-task > .task-description {
-  font-size: smaller;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 h3 {
   text-align: center;
-  color:grey;
-  font-family: 'Open Sans', sans-serif;
+  color: grey;
+  font-family: "Open Sans", sans-serif;
 }
 
-#delete-div {
-  margin: 20px;
-  height: 256px;
-  width: 256px;
-  overflow: auto;
-  background: url("../img/trash.png")
-}
-
-h2{
+h2 {
   text-align: center;
-  color:grey;
-  font-family: 'Inconsolata', monospace;
-} 
+  color: rgb(167, 215, 221);
+  font-family: "Inconsolata", monospace;
+  font-size: 60px;
+  text-shadow: 4px 4px 12px rgb(146, 185, 185);
+}
+
+.addBtn {
+  padding: 10px;
+  background: #d9d9d9;
+  color: #555;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 60px;
+  height: 40px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+
+input {
+  margin: 0;
+  border-radius: 0;
+  width: 400px;
+  padding: 10px;
+  font-size: 16px;
+  position: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+ul li:hover {
+  background-color: rgb(118, 202, 223);
+}
+
+ul li {
+  cursor: pointer;
+  position: relative;
+  height: 30px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  list-style: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("../img/background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.app-container {
+  background-color: rgba(255, 255, 255, 0.25);
+  height: 80%;
+  width: 70%;
+  float: right;
+  -webkit-box-shadow: 10px 10px 102px -13px rgba(66, 66, 66, 1);
+  -moz-box-shadow: 10px 10px 102px -13px rgba(66, 66, 66, 1);
+  box-shadow: 10px 10px 102px -13px rgba(66, 66, 66, 1);
+  border-radius: 10px;
+  text-align: center;
+  min-width: 300px;
+}
