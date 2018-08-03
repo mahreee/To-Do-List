@@ -11,16 +11,16 @@
 
 h3 {
   text-align: center;
-  color: grey;
+  color: rgb(82, 152, 199);
   font-family: "Open Sans", sans-serif;
 }
 
 h2 {
   text-align: center;
-  color: rgb(167, 215, 221);
-  font-family: "Inconsolata", monospace;
-  font-size: 60px;
-  text-shadow: 4px 4px 12px rgb(146, 185, 185);
+  color:  rgb(82, 152, 199);
+  font-family: "Open Sans", sans-serif;
+  font-size: 50px;
+  text-shadow: 4px 4px 12px rgb(105, 155, 202);
 }
 
 .addBtn {
@@ -79,7 +79,7 @@ body {
 }
 
 .app-container {
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.70);
   height: 80%;
   width: 70%;
   float: right;
